@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Javascript - Partie 4 - Exo 6</title>
+  </head>
+  <body>
+    <header>
+    <h1>Javascript - Partie 4 - Exo 6</h1>
+    <p>
+      Jeu de devinette : demandez à l'utilisateur de deviner un nombre aléatoire
+      entre 1 et 100. Vous devez définir un nombre d'essais maximum. Indiquez à
+      l'utilisateur si son choix est plus petit ou plus grand que le nombre
+      généré et afficher la bonne réponse ainsi que le nombre de tentative de
+      l'utilisateur.
+    </p>
+  </header>
+  <div class="container-fluid">
+
+    <form>
+      <div class="form-group">
+        <label for="numberGuess">Devinez le chiffre entre 1 et 100</label>
+        <input type="number" class="form-control" id="playerInput">
+      </div>
+      <button id="playerSubmit" type="submit" class="btn btn-primary" onclick="play()">Play</button>
+    </form>
+
+    <div id="hint" class="row"></div>
+    <div id="playerGuesses" class="row"></div>
+    <div id="lastResult" class="row"></div>
+
+  </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
